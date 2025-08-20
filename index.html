@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cúmplices de Um Resgate - Mundo da Novela</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+
+    <div id="acessibilidade-panel">
+        <h3>Acessibilidade</h3>
+        <button id="increase-font">A+</button>
+        <button id="decrease-font">A-</button>
+        <button id="toggle-theme">Tema</button>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre a Novela</a></li>
+            <li><a href="#personagens">Personagens</a></li>
+            <li><a href="#trilha">Trilha Sonora</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio" class="section-full-height">
+            <div class="intro-content">
+                <h1>Cúmplices de Um Resgate</h1>
+                <p>Uma história de música, amizade e o poder dos laços familiares.</p>
+                <a href="#sobre" class="cta-button">Conheça a Novela</a>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="content-wrapper">
+                <h2>A Trama</h2>
+                <div class="sinopse-container">
+                    <img src="bandacumplices.jpg" alt="Elenco da novela Cúmplices de Um Resgate" class="sinopse-image" width="1000">
+                    <p><strong>Manuela e Isabela</strong>, irmãs gêmeas separadas ao nascer, vivem realidades opostas. Manuela, uma garota humilde e talentosa, vive no interior com a família que a adotou. Isabela, uma patricinha solitária, vive na cidade com a mãe rica. Quando o destino as une, elas decidem trocar de lugar para realizar seus sonhos. A partir daí, uma série de aventuras e desafios começam a se desenrolar, envolvendo a **banda C1R** e a busca pela verdade.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="personagens">
+            <div class="content-wrapper">
+                <h2>Nossos Personagens</h2>
+                <div class="personagem-grid">
+                    <div class="personagem-card">
+                        <img src="manuela.jpg" alt="Manuela Agnes">
+                        <h3>Manuela</h3>
+                        <p>A doce e corajosa gêmea que sonha em cantar.</p>
+                    </div>
+                    <div class="personagem-card">
+                        <img src="isabela.jpg" alt="Isabela Junqueira">
+                        <h3>Isabela</h3>
+                        <p>A mimada, mas solitária gêmea que quer uma vida normal.</p>
+                    </div>
+                    <div class="personagem-card">
+                        <img src="joaquim.jpeg" alt="Joaquim Vaz">
+                        <h3>Joaquim</h3>
+                        <p>O líder e guitarrista da banda, apaixonado pela música e por Manuela.</p>
+                    </div>
+                    <div class="personagem-card">
+                        <img src="personagem 3.jpg" alt="Priscila Meneses">
+                        <h3>Priscila</h3>
+                        <p>A rival que se une ao grupo e encontra a amizade verdadeira.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trilha">
+            <div class="content-wrapper">
+                <h2>Trilha Sonora</h2>
+                <div class="trilha-container">
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <p><strong>Título da Música 1</strong></p>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/zHkS46fLh0Y" frameborder="0" allowfullscreen></iframe>
+                        <p><strong>Título da Música 2</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="content-wrapper">
+                <h2>Entre em Contato</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por um fã para fãs. © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
