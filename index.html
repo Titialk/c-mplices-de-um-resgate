@@ -1,123 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cúmplices de Um Resgate - Mundo da Novela</title>
+    <title>Cúmplices de um Resgate - Fã Clube Oficial!</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/pt/d/d4/C%C3%BAmplices_de_Um_Resgate_-_Logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="light-theme">
-
-    <div id="acessibilidade-panel">
-        <h3>Acessibilidade</h3>
-        <button id="increase-font">A+</button>
-        <button id="decrease-font">A-</button>
-        <button id="toggle-theme">Tema</button>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre a Novela</a></li>
-            <li><a href="#personagens">Personagens</a></li>
-            <li><a href="#trilha">Trilha Sonora</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+<body>
+    <header>
+        <div class="container">
+            <img src="Cumplices logo.png" alt="Logo Cúmplices de um Resgate" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#resumo">Resumo</a></li>
+                    <li><a href="#personagens">Personagens</a></li>
+                    <li><a href="#musicas">Músicas</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        <section id="inicio" class="section-full-height">
-            <div class="intro-content">
-                <h1>Cúmplices de Um Resgate</h1>
-                <p>Uma história de música, amizade e o poder dos laços familiares.</p>
-                <a href="#sobre" class="cta-button">Conheça a Novela</a>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Bem-vindos ao Mundo de Manuela e Isabela!</h1>
+                <p>Aqui você encontra tudo sobre a novela que conquistou o Brasil!</p>
+                <button class="cta-button">Conheça a História!</button>
             </div>
         </section>
 
-        <section id="sobre">
-            <div class="content-wrapper">
-                <h2>A Trama</h2>
-                <div class="sinopse-container">
-                    <img src="bandacumplices.jpg" alt="Elenco da novela Cúmplices de Um Resgate" class="sinopse-image" width="1000">
-                    <p><strong>Manuela e Isabela</strong>, irmãs gêmeas separadas ao nascer, vivem realidades opostas. Manuela, uma garota humilde e talentosa, vive no interior com a família que a adotou. Isabela, uma patricinha solitária, vive na cidade com a mãe rica. Quando o destino as une, elas decidem trocar de lugar para realizar seus sonhos. A partir daí, uma série de aventuras e desafios começam a se desenrolar, envolvendo a **banda C1R** e a busca pela verdade.</p>
+        <aside class="accessibility-box" aria-label="Menu de Acessibilidade">
+            <button id="accessibility-toggle" aria-expanded="false" aria-controls="accessibility-options" title="Acessibilidade">
+                <span class="acess-icon">⚙️</span>
+            </button>
+            <div id="accessibility-options" class="options-container">
+                <h2>Acessibilidade</h2>
+                <div class="font-size-controls">
+                    <span>Tamanho da Fonte:</span>
+                    <button id="increase-font" aria-label="Aumentar fonte">A+</button>
+                    <button id="decrease-font" aria-label="Diminuir fonte">A-</button>
+                </div>
+                <div class="theme-controls">
+                    <span>Tema:</span>
+                    <button id="toggle-theme" aria-label="Alternar tema claro/escuro">
+                        <span class="light-icon">☀️</span> <span class="dark-icon" style="display:none;">🌙</span>
+                    </button>
                 </div>
             </div>
+        </aside>
+
+        <section id="resumo" class="section-content highlight-section">
+            <div class="container">
+                <h2>Resumo da Novela</h2>
+                <p>
+                    "Cúmplices de um Resgate" conta a história de Manuela e Isabela, duas irmãs gêmeas separadas no nascimento. Manuela, uma garota doce e talentosa que vive no interior com sua avó, e Isabela, uma garota mimada e rica que cresceu sem o amor de seus pais. O destino as une quando Manuela é convidada a participar de uma audição em São Paulo e as duas se encontram. Elas decidem trocar de lugar secretamente, sem saber dos perigos que as aguardam. Juntas, elas descobrem a verdade sobre sua origem e enfrentam a vilã Regina, que fará de tudo para separá-las.
+                </p>
+            </div>
         </section>
 
-        <section id="personagens">
-            <div class="content-wrapper">
-                <h2>Nossos Personagens</h2>
-                <div class="personagem-grid">
-                    <div class="personagem-card">
-                        <img src="manuela.jpg" alt="Manuela Agnes">
-                        <h3>Manuela</h3>
-                        <p>A doce e corajosa gêmea que sonha em cantar.</p>
+        <section id="personagens" class="section-content">
+            <div class="container">
+                <h2>Nossos Personagens Favoritos</h2>
+                <div class="character-grid">
+                    <div class="character-card">
+                        <img src="manuela.jpg" alt="Manuela" loading="lazy">
+                        <h3>Manuela Agnes</h3>
+                        <p>A irmã doce e ingênua, apaixonada por música e que viveu uma vida simples.</p>
                     </div>
-                    <div class="personagem-card">
-                        <img src="isabela.jpg" alt="Isabela Junqueira">
-                        <h3>Isabela</h3>
-                        <p>A mimada, mas solitária gêmea que quer uma vida normal.</p>
+                    <div class="character-card">
+                        <img src="isabela.jpg" alt="Isabela" loading="lazy">
+                        <h3>Isabela Junqueira</h3>
+                        <p>A irmã rica e mimada, que sonha com uma vida normal e o amor que nunca teve.</p>
                     </div>
-                    <div class="personagem-card">
-                        <img src="joaquim.jpeg" alt="Joaquim Vaz">
+                    <div class="character-card">
+                        <img src="joao.jpg" alt="Joaquim" loading="lazy">
                         <h3>Joaquim</h3>
-                        <p>O líder e guitarrista da banda, apaixonado pela música e por Manuela.</p>
+                        <p>O líder da banda C1R, talentoso e corajoso.</p>
                     </div>
-                    <div class="personagem-card">
-                        <img src="personagem 3.jpg" alt="Priscila Meneses">
-                        <h3>Priscila</h3>
-                        <p>A rival que se une ao grupo e encontra a amizade verdadeira.</p>
+                    <div class="character-card">
+                        <img src="julia.jpg" alt="Julia" loading="lazy">
+                        <h3>Julia</h3>
+                        <p>A irmã mais velha, responsável e apaixonada por música.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="trilha">
-            <div class="content-wrapper">
-                <h2>Trilha Sonora</h2>
-                <div class="trilha-container">
-                    <div class="video-item">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-                        <p><strong>Título da Música 1</strong></p>
+                    <div class="character-card">
+                        <img src="https://br.web.img2.acsta.net/r_1280_720/newsv7/19/04/17/20/00/0173024.jpg" alt="Felipe" loading="lazy">
+                        <h3>Felipe</h3>
+                        <p>O irmão mais novo, que sempre anima a banda com seu jeito alegre.</p>
                     </div>
-                    <div class="video-item">
-                        <iframe src="https://www.youtube.com/embed/zHkS46fLh0Y" frameborder="0" allowfullscreen></iframe>
-                        <p><strong>Título da Música 2</strong></p>
+                    <div class="character-card">
+                        <img src="https://br.web.img3.acsta.net/r_1280_720/pictures/16/06/07/19/27/027063.jpg" alt="Regina" loading="lazy">
+                        <h3>Regina</h3>
+                        <p>A vilã que marcou a história e deu muito o que falar!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contato">
-            <div class="content-wrapper">
-                <h2>Entre em Contato</h2>
-                <form id="contact-form">
+        <section id="musicas" class="section-content highlight-section">
+            <div class="container">
+                <h2>Músicas da novela</h2>
+                <div class="music-list">
+                    <div class="music-item">
+                        <h3>Cúmplices de um Resgate</h3>
+                        <p>Abertura da novela</p>
+                        <a href="https://youtu.be/wh8vpLEuv6M?si=NuLNLMwlzCzhxNRy" target="_blank" aria-label="Ouvir Cúmplices de um Resgate no YouTube (Exemplo)">Ouvir no YouTube</a>
+                    </div>
+                    <div class="music-item">
+                        <h3>Superstar</h3>
+                        <p>A música que fez a banda C1R estourar!</p>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" aria-label="Ouvir Superstar no YouTube (Exemplo)">Ouvir no YouTube</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section-content">
+            <div class="container">
+                <h2>Galeria de Fotos</h2>
+                <div class="gallery-grid">
+                    <img src="banda 1.jpg" alt="Cúmplices de um Resgate cena 1" loading="lazy">
+                    <img src="banda 2.jpg" alt="Cúmplices de um Resgate cena 2" loading="lazy">
+                    <img src="fotos.jpg" alt="Cúmplices de um Resgate cena 3" loading="lazy">
+                    <img src="c1r.webp" alt="Cúmplices de um Resgate cena 4" loading="lazy">
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato" class="section-content highlight-section">
+            <div class="container">
+                <h2>Entre em Contato!</h2>
+                <p>Mande sua mensagem, sugestão ou simplesmente diga "oi"!</p>
+                <form action="#" method="post" class="contact-form">
                     <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">E-mail:</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="cta-button">Enviar</button>
+                    <button type="submit" class="cta-button">Enviar Mensagem</button>
                 </form>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <p>Desenvolvido por um fã para fãs. © 2025</p>
+        <div class="container">
+            <p>&copy; 2023 Fã Clube Cúmplices de um Resgate. Todos os direitos reservados.</p>
+            <p>Criado com muito carinho para os fãs de Lençóis Paulista, SP e do Brasil!</p>
+        </div>
     </footer>
-
+    
     <script src="script.js"></script>
-
 </body>
 </html>
